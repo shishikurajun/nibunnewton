@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(204, 240, 240);
+}
+
+#contents {
+    display: flex;
+  }
+
+.button{
+    width: 100px;
+    height: 60px;
+    font-size: 15pt;
+    margin-top: 5px;
+}
+
+#groupe1{
+    width: 220px;
+}
+
+#groupe2{
+    width: 360px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.myCanvas {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+.area {
+    margin-top: 50px;
+    position: relative;
+}
+
+#area1 {
+    background-color: #ee93d7;
+    width: 260px;
+    height: 260px;
+}
+
+#area2 {
+    background-color: #f1d575;
+    width: 260px;
+    height: 260px;
+}
+
+.mozi{
+    font-size: 18px;
+    margin: 0px;
+    padding:10px;
+    width: 130px;
+    height: 100px;
+}

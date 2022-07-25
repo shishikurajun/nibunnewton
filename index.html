@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8">
+    <title>Montecarlo Method</title>
+    <link rel="stylesheet" href="nibunnewton.css">
+    <script src="./js/nibunnewton_ui.js"></script>
+    <script src="./js/nibunnewton.js" defer></script>
+  </head>
+  <body>
+    <div id="contents">
+      <div id="groupe1">
+        <div>
+          <button type="button" id="start" class="button">スタート</button>
+          <button type="button" id="clear" class="button">リセット</button>
+          <button type="button" id="plus" class="button">回数+1</button>
+        </div>
+        <div>
+          <p>初期値</p>
+          <input type="range" id="slidebar" min="0.0" max="1.0" step="0.1" value="1.0">
+        </div>
+        <div id="kyoyou">
+          <p>許容誤差</p>
+          <button type="button" id="d02" class="size" number=0.01>0.01</button>
+          <button type="button" id="d03" class="size" number=0.0001>0.0001</button>
+          <button type="button" id="d04" class="size" number=0.0000001>0.0000001</button>
+        </div>
+        <p>f(x)=x^3+x-1</p>
+      </div>
+      <div id="groupe2">
+        <div id="area1" class="area">
+          <p class="mozi">ニュートン法 </p>
+          <canvas class="myCanvas" id="graph1" width="360" height="360"></canvas>
+          <canvas class="myCanvas" id="graph1b" width="360" height="360"></canvas>
+        </div>
+        <p id="nibun"></p>
+
+        <div id="area2" class="area">
+          <p class="mozi">二分法</p>
+          <canvas class="myCanvas" id="graph2" width="360" height="360"></canvas>
+          <canvas class="myCanvas" id="graph2b" width="360" height="360"></canvas>
+        </div>
+        <p id="newton"></p>
+      </div>
+    </div>
+  </body>
+</html>
