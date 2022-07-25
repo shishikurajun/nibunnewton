@@ -18,7 +18,7 @@ class Nibunnewton_ui{
         this.slidedbar = slidedbar;
         this.nibunnewton = new nibunnewton();
 
-        this.slidedbar.addEventListener("change", () => {
+        this.slidedbar.addEventListener("click", () => {
             this.bar = (slidedbar.value);
             console.log(this.bar);
         });
